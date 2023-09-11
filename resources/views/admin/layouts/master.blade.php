@@ -9,17 +9,25 @@
     <title>{{__('Khademan Admin')}}</title>
     <link href="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/style.min.css" rel="stylesheet"/>
     <link href="{{ asset('admin/css/styles.css')}}" rel="stylesheet"/>
-    <!-- Sweet Alert -->
 
+    <!-- General CSS Files -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+{{--    <link rel="stylesheet" href="{{ asset('admin/node_modules/summernote/dist/summernote-bs4.css')}}">--}}
+{{--    <link rel="stylesheet" href="{{ asset('admin/node_modules/selectric/public/selectric.css')}}">--}}
 
+{{--    add summernote--}}
+    <!-- include libraries(jQuery, bootstrap) -->
 
-
+    <!-- summernote css/js -->
+    <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-bs4.min.css" rel="stylesheet">
 
 
     <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
 
-
 </head>
+
+
 <body class="sb-nav-fixed">
 {{--Navbar section--}}
 @include('admin.layouts.navbar')
@@ -56,6 +64,10 @@
 <script src="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/umd/simple-datatables.min.js"
         crossorigin="anonymous"></script>
 <script src="{{ asset('admin/js/datatables-simple-demo.js')}}"></script>
+{{--summernote--}}
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-bs4.min.js"></script>
+
 
 @stack('scripts')
 @include('sweetalert::alert')

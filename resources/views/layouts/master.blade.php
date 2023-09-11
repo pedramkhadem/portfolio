@@ -7,7 +7,7 @@
     <meta name="author" content=""/>
     <title>{{__('Pedram Khademan')}}</title>
     <!-- Favicon-->
-    <link rel="icon" type="image/x-icon" href="{{ asset('pages/assets/favicon.ico')}}"/>
+    <link rel="icon" type="image/x-icon" href="{{ asset('a/assets/favicon.ico')}}"/>
     <!-- Custom Google font-->
     <link rel="preconnect" href="https://fonts.googleapis.com"/>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
@@ -17,7 +17,7 @@
     <!-- Bootstrap icons-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet"/>
     <!-- Core theme CSS (includes Bootstrap)-->
-    <link href="{{ asset('pages/css/styles.css')}}" rel="stylesheet"/>
+    <link href="{{ asset('frontend/css/styles.css')}}" rel="stylesheet"/>
 </head>
 <body class="d-flex flex-column h-100">
 <main class="flex-shrink-0">
@@ -34,6 +34,6 @@
 <!-- Bootstrap core JS-->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 <!-- Core theme JS-->
-<script src="{{asset('pages/js/scripts.js')}}"></script>
+<script src="{{asset('frontend/js/scripts.js')}}"></script>
 </body>
 </html>

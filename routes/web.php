@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\frontend\HomeController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
@@ -13,10 +14,8 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
+Route::get('/' , [HomeController::class , 'home'])->name('home');
 
-Route::get('/', function () {
-    return view('pages.index');
-});
 
 Route::get('/dashboard', function () {
     return view('dashboard');
@@ -29,3 +28,11 @@ Route::middleware('auth')->group(function () {
 });
 
 require __DIR__.'/auth.php';
+
+Route::group(['prefix'=>'home'  , 'as' =>'home.'], function ()
+{
+
+    Route::get('resume' , [HomeController::class , 'resume'])->name('resume');
+    Route::get('projects' , [HomeController::class , 'projects'])->name('projects');
+    Route::get('contact' , [HomeController::class , 'contact'])->name('contact');
+});

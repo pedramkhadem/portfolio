@@ -33,15 +33,15 @@
                         <a class="nav-link collapsed" href="#" data-bs-toggle="collapse"
                            data-bs-target="#pagesCollapseAuth" aria-expanded="false"
                            aria-controls="pagesCollapseAuth">
-                            {{__('Authentication')}}
+                            {{__('Resume')}}
                             <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
                         </a>
                         <div class="collapse" id="pagesCollapseAuth" aria-labelledby="headingOne"
                              data-bs-parent="#sidenavAccordionPages">
                             <nav class="sb-sidenav-menu-nested nav">
-                                <a class="nav-link" href="login.html">{{__('Login')}}</a>
-                                <a class="nav-link" href="register.html">{{__('Register')}}</a>
-                                <a class="nav-link" href="password.html">{{__('Forgot Password')}}</a>
+                                <a class="nav-link" href="{{route('admin.resume.index')}}">{{__('Show ')}}</a>
+                                <a class="nav-link" href="{{route('admin.resume.create')}}">{{__('Add New')}}</a>
+                                <a class="nav-link" href="#">{{__('Edit')}}</a>
                             </nav>
                         </div>
 
